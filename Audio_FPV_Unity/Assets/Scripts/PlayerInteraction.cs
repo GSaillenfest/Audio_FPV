@@ -7,6 +7,7 @@ public class PlayerInteraction : MonoBehaviour
 {
     [SerializeField] float maxDistance;
     [SerializeField] Image crossHair;
+    
 
     IUsable target;
 
@@ -36,7 +37,6 @@ public class PlayerInteraction : MonoBehaviour
         else
         {
             target = hitObject.transform.gameObject.GetComponent<IUsable>();
-            Debug.Log("ok");    
         }
 
     }
